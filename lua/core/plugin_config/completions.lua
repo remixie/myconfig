@@ -8,9 +8,9 @@ mapping = cmp.mapping.preset.insert({
       ['<C-f>'] = cmp.mapping.scroll_docs(4),
       ['<C-Space>'] = cmp.mapping.complete(),
       ['<C-e>'] = cmp.mapping.abort(),
-      ['k'] = cmp.mapping.select_prev_item(),
-      ['j'] = cmp.mapping.select_next_item(),
-      ['<CR>'] = cmp.mapping.confirm({ select = true }), 
+      ['<s-tab>'] = cmp.mapping.select_prev_item(),
+      ['<tab>'] = cmp.mapping.select_next_item(),
+      ['<CR>'] = cmp.mapping.confirm({ select = true }),
     }),
     snippet = {
     expand = function(args)
