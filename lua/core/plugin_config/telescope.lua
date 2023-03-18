@@ -1,5 +1,4 @@
-local builtin = require('telescope.builtin')
-
+local builtin = require("telescope.builtin")
 vim.keymap.set('n', '<c-m>', builtin.find_files, {})
 vim.keymap.set('n', '<Space><Space>', builtin.oldfiles, {})
 vim.keymap.set('n', '<c-p>', builtin.live_grep, {})

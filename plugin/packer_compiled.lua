@@ -49,13 +49,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-<<<<<<< HEAD
-local package_path_str = "/home/remix/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?.lua;/home/remix/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?/init.lua;/home/remix/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?.lua;/home/remix/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?/init.lua"
-local install_cpath_pattern = "/home/remix/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/lua/5.1/?.so"
-=======
 local package_path_str = "/Users/rem/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?.lua;/Users/rem/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?/init.lua;/Users/rem/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?.lua;/Users/rem/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?/init.lua"
 local install_cpath_pattern = "/Users/rem/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/lua/5.1/?.so"
->>>>>>> c45c2de6e4f040a50811c7c25418ea616ae68c30
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -81,137 +76,82 @@ time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
   LuaSnip = {
     loaded = true,
-<<<<<<< HEAD
-    path = "/home/remix/.local/share/nvim/site/pack/packer/start/LuaSnip",
-=======
     path = "/Users/rem/.local/share/nvim/site/pack/packer/start/LuaSnip",
->>>>>>> c45c2de6e4f040a50811c7c25418ea616ae68c30
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
   ["cmp-nvim-lsp"] = {
     loaded = true,
-<<<<<<< HEAD
-    path = "/home/remix/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
-=======
     path = "/Users/rem/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
->>>>>>> c45c2de6e4f040a50811c7c25418ea616ae68c30
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
   cmp_luasnip = {
     loaded = true,
-<<<<<<< HEAD
-    path = "/home/remix/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
-=======
     path = "/Users/rem/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
->>>>>>> c45c2de6e4f040a50811c7c25418ea616ae68c30
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
   ["friendly-snippets"] = {
     loaded = true,
-<<<<<<< HEAD
-    path = "/home/remix/.local/share/nvim/site/pack/packer/start/friendly-snippets",
-=======
     path = "/Users/rem/.local/share/nvim/site/pack/packer/start/friendly-snippets",
->>>>>>> c45c2de6e4f040a50811c7c25418ea616ae68c30
     url = "https://github.com/rafamadriz/friendly-snippets"
+  },
+  ["git-blame.nvim"] = {
+    loaded = true,
+    path = "/Users/rem/.local/share/nvim/site/pack/packer/start/git-blame.nvim",
+    url = "https://github.com/f-person/git-blame.nvim"
   },
   ["lualine.nvim"] = {
     loaded = true,
-<<<<<<< HEAD
-    path = "/home/remix/.local/share/nvim/site/pack/packer/start/lualine.nvim",
-=======
     path = "/Users/rem/.local/share/nvim/site/pack/packer/start/lualine.nvim",
->>>>>>> c45c2de6e4f040a50811c7c25418ea616ae68c30
     url = "https://github.com/nvim-lualine/lualine.nvim"
   },
   ["mason-lspconfig.nvim"] = {
     loaded = true,
-<<<<<<< HEAD
-    path = "/home/remix/.local/share/nvim/site/pack/packer/start/mason-lspconfig.nvim",
-=======
     path = "/Users/rem/.local/share/nvim/site/pack/packer/start/mason-lspconfig.nvim",
->>>>>>> c45c2de6e4f040a50811c7c25418ea616ae68c30
     url = "https://github.com/williamboman/mason-lspconfig.nvim"
   },
   ["mason.nvim"] = {
     loaded = true,
-<<<<<<< HEAD
-    path = "/home/remix/.local/share/nvim/site/pack/packer/start/mason.nvim",
-=======
     path = "/Users/rem/.local/share/nvim/site/pack/packer/start/mason.nvim",
->>>>>>> c45c2de6e4f040a50811c7c25418ea616ae68c30
     url = "https://github.com/williamboman/mason.nvim"
   },
   ["nvim-cmp"] = {
     loaded = true,
-<<<<<<< HEAD
-    path = "/home/remix/.local/share/nvim/site/pack/packer/start/nvim-cmp",
-=======
     path = "/Users/rem/.local/share/nvim/site/pack/packer/start/nvim-cmp",
->>>>>>> c45c2de6e4f040a50811c7c25418ea616ae68c30
     url = "https://github.com/hrsh7th/nvim-cmp"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
-<<<<<<< HEAD
-    path = "/home/remix/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
-=======
     path = "/Users/rem/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
->>>>>>> c45c2de6e4f040a50811c7c25418ea616ae68c30
     url = "https://github.com/neovim/nvim-lspconfig"
   },
   ["nvim-tree.lua"] = {
     loaded = true,
-<<<<<<< HEAD
-    path = "/home/remix/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
-=======
     path = "/Users/rem/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
->>>>>>> c45c2de6e4f040a50811c7c25418ea616ae68c30
     url = "https://github.com/nvim-tree/nvim-tree.lua"
   },
   ["nvim-treesitter"] = {
     loaded = true,
-<<<<<<< HEAD
-    path = "/home/remix/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
-=======
     path = "/Users/rem/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
->>>>>>> c45c2de6e4f040a50811c7c25418ea616ae68c30
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
   ["nvim-web-devicons"] = {
     loaded = true,
-<<<<<<< HEAD
-    path = "/home/remix/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
-=======
     path = "/Users/rem/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
->>>>>>> c45c2de6e4f040a50811c7c25418ea616ae68c30
     url = "https://github.com/nvim-tree/nvim-web-devicons"
   },
   ["packer.nvim"] = {
     loaded = true,
-<<<<<<< HEAD
-    path = "/home/remix/.local/share/nvim/site/pack/packer/start/packer.nvim",
-=======
     path = "/Users/rem/.local/share/nvim/site/pack/packer/start/packer.nvim",
->>>>>>> c45c2de6e4f040a50811c7c25418ea616ae68c30
     url = "https://github.com/wbthomason/packer.nvim"
   },
   ["plenary.nvim"] = {
     loaded = true,
-<<<<<<< HEAD
-    path = "/home/remix/.local/share/nvim/site/pack/packer/start/plenary.nvim",
-=======
     path = "/Users/rem/.local/share/nvim/site/pack/packer/start/plenary.nvim",
->>>>>>> c45c2de6e4f040a50811c7c25418ea616ae68c30
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,
-<<<<<<< HEAD
-    path = "/home/remix/.local/share/nvim/site/pack/packer/start/telescope.nvim",
-=======
     path = "/Users/rem/.local/share/nvim/site/pack/packer/start/telescope.nvim",
->>>>>>> c45c2de6e4f040a50811c7c25418ea616ae68c30
     url = "https://github.com/nvim-telescope/telescope.nvim"
   }
 }
